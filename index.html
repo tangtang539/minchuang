@@ -1,0 +1,160 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<style type="text/css">
+			.img {
+				width: 61px;
+				height: 75px;
+			}
+
+			.img_fdj,
+			.img_world {
+
+				width: 12px;
+				height: 13px;
+			}
+
+			a {
+				font-size: 16px;
+				color: #1d2124;
+			}
+
+			a:hover {
+				color: firebrick;
+			}
+
+			.font_small {
+				font-size: .8rem;
+			}
+
+			.inner {
+				display: none;
+				position: relative;
+			}
+
+			.out ul {
+				padding: 20px;
+				background-color: #fff;
+				z-index: 10;
+				position: absolute;
+
+			}
+
+			.out:hover ul {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="=row mt-3 d-flex">
+				<div class="col-2">
+					<a href="#"><img class="img" src="img/logo.png"></a>
+				</div>
+				<div class="col-8 pt-4">
+					<ul class="list-unstyled d-flex justify-content-around text-center">
+						<li>
+							<a class="" href="#">首页</a>
+						</li>
+						<li>
+							<a class="" href="#">品牌</a>
+						</li>
+						<li>
+							<a class="" href="#">产品</a>
+						</li>
+						<li>
+							<a class="" href="#">新闻</a>
+						</li>
+						<li>
+							<a class="" href="#">店铺</a>
+						</li>
+						<li>
+							<a class="" href="#">联系</a>
+						</li>
+						<li>
+							<a class="" href="#">招聘</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-2 mt-4">
+					<ul class="list-unstyled">
+						<li class="out">
+							<a class="font_small text-muted mr" href="#">简体</a>
+							<img src="img/xialaxz.png" alt="">
+							<img class="img_fdj" src="img/fangdj.png" alt="">
+							<ul class="font_small text-muted list-unstyled inner">
+								<li class="py-2">English</li>
+								<li class="py-2">日本语</li>
+								<li class="py-2">繁体中文</li>
+								<li class="py-2">全球市场&nbsp;&nbsp;<img class="img_world" src="img/world.png"></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<hr>
+			</div>
+			<!-- 轮播图 -->
+			<div id="demo" class="carousel" data-ride="carousel">
+				<!-- 轮播图片 -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<a href="#">
+							<img class="w-100" src="img/lun01.jpg" alt="">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="#">
+							<img class="w-100" src="img/lun02.jpg" alt="">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="#">
+							<img class="w-100" src="img/lun03.jpg" alt="">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="#">
+							<img class="w-100" src="img/lun04.jpg" alt="">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="#">
+							<img class="w-100" src="img/lun05.jpg" alt="">
+						</a>
+					</div>
+				</div>
+				<!-- 轮播指示器 -->
+				<ul class="carousel-indicators">
+					<li data-slide-to="0" data-target="#demo" class="active"></li>
+					<li data-slide-to="1" data-target="#demo"></li>
+					<li data-slide-to="2" data-target="#demo"></li>
+					<li data-slide-to="3" data-target="#demo"></li>
+					<li data-slide-to="4" data-target="#demo"></li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-12 mt-3">
+					<a href="#">
+						<img class="w-100" src="img/jianjie.jpg">
+					</a>
+				</div>
+				<div class="col-md-6 col-sm-12 mt-3">
+					<div class="w-100 d-flex flex-column p-5 align-items-center border">
+						<h3 class="text-center">投资政策</h3>
+						<div class="font_small w-50 ">特许商标使用金、货品保证金、装修预付金；每天营业额按比例分成，第二天到账...</div>
+						<img src="img/learn%20more.png">
+					</div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
